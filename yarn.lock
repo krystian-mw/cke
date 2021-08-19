@@ -9,6 +9,13 @@
   dependencies:
     ckeditor5 "^29.1.0"
 
+"@ckeditor/ckeditor5-alignment@^29.1.0":
+  version "29.1.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-alignment/-/ckeditor5-alignment-29.1.0.tgz#a6bd72d799e0d66ddde7304f1028605dd78867b9"
+  integrity sha512-OPJOxPWVM9uHTEVhTPvi/NMuLUdB7sieejF0NX7KI4NTdYYU46r8Et5SJmRDjGyg8Oezz1otaP8VM/f0ffPu0Q==
+  dependencies:
+    ckeditor5 "^29.1.0"
+
 "@ckeditor/ckeditor5-autoformat@^29.1.0":
   version "29.1.0"
   resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-autoformat/-/ckeditor5-autoformat-29.1.0.tgz#a49804bd26c4ce4f6f659e9d7d11de2091d82a3e"
