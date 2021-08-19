@@ -68,11 +68,11 @@ ClassicEditor.defaultConfig = {
   toolbar: {
     items: [
       "alignment",
-      "heading",
-      "|",
-      "bold",
-      "italic",
-      "link",
+      //   "heading",
+      //   "|",
+      //   "bold",
+      //   "italic",
+      //   "link",
       "bulletedList",
       "numberedList",
       "|",
