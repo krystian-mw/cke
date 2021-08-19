@@ -34,6 +34,7 @@ import Alignment from "@ckeditor/ckeditor5-alignment/src/alignment";
 import SourceEditing from "@ckeditor/ckeditor5-source-editing/src/sourceediting";
 // import Markdown from "@ckeditor/ckeditor5-markdown-gfm/src/markdown";
 import HorizontalLine from "@ckeditor/ckeditor5-horizontal-line/src/horizontalline";
+import Mention from "@ckeditor/ckeditor5-mention/src/mention";
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -67,6 +68,7 @@ ClassicEditor.builtinPlugins = [
   SourceEditing,
   //   Markdown,
   HorizontalLine,
+  Mention,
 ];
 
 // Editor configuration.
