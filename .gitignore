@@ -1,2 +1,5 @@
 *node_modules*
-*yarn*
+yarn.lock
+src/styles.js
+src/config.js
+temp.txt
