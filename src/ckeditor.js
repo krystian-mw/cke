@@ -67,7 +67,7 @@ import TableProperties from "@ckeditor/ckeditor5-table/src/tableproperties";
 import TableToolbar from "@ckeditor/ckeditor5-table/src/tabletoolbar.js";
 import TextPartLanguage from "@ckeditor/ckeditor5-language/src/textpartlanguage.js";
 import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformation.js";
-import Title from "@ckeditor/ckeditor5-heading/src/title.js";
+// import Title from "@ckeditor/ckeditor5-heading/src/title.js";
 import TodoList from "@ckeditor/ckeditor5-list/src/todolist";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline.js";
 import WordCount from "@ckeditor/ckeditor5-word-count/src/wordcount.js";
@@ -140,10 +140,73 @@ Editor.builtinPlugins = [
   TableToolbar,
   TextPartLanguage,
   TextTransformation,
-  Title,
+  // Title,
   TodoList,
   Underline,
   WordCount,
 ];
+
+ClassicEditor.defaultConfig = {
+  toolbar: {
+    items: [
+      "heading",
+      "bold",
+      "italic",
+      "link",
+      "bulletedList",
+      "numberedList",
+      "outdent",
+      "indent",
+      "imageUpload",
+      "blockQuote",
+      "insertTable",
+      "mediaEmbed",
+      "undo",
+      "redo",
+      "alignment",
+      "code",
+      "codeBlock",
+      "findAndReplace",
+      "fontBackgroundColor",
+      "fontColor",
+      "fontFamily",
+      "fontSize",
+      "highlight",
+      "horizontalLine",
+      "htmlEmbed",
+      "imageInsert",
+      "sourceEditing",
+      "underline",
+      "textPartLanguage",
+      "todoList",
+      "superscript",
+      "subscript",
+      "strikethrough",
+      "restrictedEditingException",
+      "specialCharacters",
+      "removeFormat",
+      "pageBreak",
+    ],
+  },
+  language: "en",
+  image: {
+    toolbar: [
+      "imageTextAlternative",
+      "imageStyle:inline",
+      "imageStyle:block",
+      "imageStyle:side",
+      "linkImage",
+    ],
+  },
+  table: {
+    contentToolbar: [
+      "tableColumn",
+      "tableRow",
+      "mergeTableCells",
+      "tableCellProperties",
+      "tableProperties",
+    ],
+  },
+};
 
 export default Editor;
