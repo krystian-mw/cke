@@ -71,6 +71,7 @@ import TextTransformation from "@ckeditor/ckeditor5-typing/src/texttransformatio
 import TodoList from "@ckeditor/ckeditor5-list/src/todolist";
 import Underline from "@ckeditor/ckeditor5-basic-styles/src/underline.js";
 import WordCount from "@ckeditor/ckeditor5-word-count/src/wordcount.js";
+import Attachamizer from "./attachamizer";
 
 class Editor extends ClassicEditor {}
 
@@ -144,95 +145,7 @@ Editor.builtinPlugins = [
   TodoList,
   Underline,
   WordCount,
+  Attachamizer,
 ];
-
-ClassicEditor.defaultConfig = {
-  toolbar: {
-    shouldNotGroupWhenFull: true,
-    items: [
-      "heading",
-      "bold",
-      "italic",
-      "link",
-      "bulletedList",
-      "numberedList",
-      "outdent",
-      "indent",
-      "imageUpload",
-      "blockQuote",
-      "insertTable",
-      "mediaEmbed",
-      "undo",
-      "redo",
-      "alignment",
-      "code",
-      "codeBlock",
-      "findAndReplace",
-      "fontBackgroundColor",
-      "fontColor",
-      "fontFamily",
-      "fontSize",
-      "highlight",
-      "horizontalLine",
-      "htmlEmbed",
-      "imageInsert",
-      "sourceEditing",
-      "underline",
-      "textPartLanguage",
-      "todoList",
-      "superscript",
-      "subscript",
-      "strikethrough",
-      "restrictedEditingException",
-      "specialCharacters",
-      "removeFormat",
-      "pageBreak",
-    ],
-  },
-  language: "en",
-  image: {
-    toolbar: [
-      "imageTextAlternative",
-      "imageStyle:inline",
-      "imageStyle:block",
-      "imageStyle:side",
-      "linkImage",
-    ],
-  },
-  table: {
-    contentToolbar: [
-      "tableColumn",
-      "tableRow",
-      "mergeTableCells",
-      "tableCellProperties",
-      "tableProperties",
-    ],
-  },
-  heading: {
-    options: [
-      {
-        title: "DIV container",
-        model: "divcontainer",
-        view: {
-          name: "div",
-          classes: "ckeditor_div",
-        },
-      },
-      { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
-      {
-        model: "heading1",
-        view: "h1",
-        title: "Heading 1",
-        class: "ck-heading_heading1",
-      },
-      {
-        model: "heading2",
-        view: "h2",
-        title: "Heading 2",
-        class: "ck-heading_heading2",
-      },
-    ],
-  },
-};
 
 export default Editor;
